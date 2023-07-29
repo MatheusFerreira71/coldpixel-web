@@ -1,0 +1,27 @@
+:root {
+  --brand-primary: #151C45;
+  --brand-primary-light: #242E61;
+  --brand-primary-dark: #0D1121;
+  --brand-secondary: #03DAC6;
+  --brand-secondary-light: #33FFEC;
+  --brand-secondary-dark: #018786;
+
+  --bw-black: #040404;
+  --bw-black-light: #1C1B1B;
+  --bw-white: #FCFCFC;
+  --bw-white-light: #FFFFFF;
+  --bw-white-dark: #EEEEEE;
+  --bw-grey: #B0B0B0;
+  --bw-grey-light: #DDDDDD;
+
+  --helpers-cta: #2AD5E0;
+  --helpers-success: #2AE052;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  // background-color: var(--dark-mode);
+  color: var(--brand-primary);
+  font-size: 16px;
+}
