@@ -1,0 +1,86 @@
+.about {
+  border-radius: 1rem;
+  background: var(--bw-white);
+  box-shadow: 0px 32px 16px -16px rgba(0, 0, 0, 0.24);
+  padding: 4em 2em 5.5em;
+
+  .about-menus,
+  .about-tab,
+  .about-services {
+    display: flex;
+  }
+
+  .about-tab {
+    justify-content: space-between;
+    align-items: center;
+
+    .about-text {
+      height: 18.625rem;
+      margin-left: 2.25rem;
+
+      .about-menus {
+        justify-content: flex-end;
+
+        .active {
+          color: var(--brand-secondary) !important;
+          position: relative;
+          display: inline-block;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            width: 4rem;
+            height: 2px;
+            right: 0;
+            background-color: var(--brand-secondary);
+          }
+        }
+
+        p {
+          margin: 0;
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 1.75rem;
+          color: var(--bw-grey);
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      p {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.125rem;
+      }
+    }
+  }
+
+  .about-services {
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    .services-text {
+      width: 25.625rem;
+      h1 {
+        color: var(--brand-secondary);
+        margin: 0 0 1.5em;
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 2rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.125rem;
+      }
+    }
+  }
+}
+
+.mr-1 {
+  margin-right: 2rem !important;
+}

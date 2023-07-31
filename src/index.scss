@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 :root {
   --brand-primary: #151C45;
   --brand-primary-light: #242E61;
@@ -16,12 +18,34 @@
 
   --helpers-cta: #2AD5E0;
   --helpers-success: #2AE052;
+
+  --bg-primary: #1A203F;
 }
 
 body {
   padding: 0;
   margin: 0;
-  // background-color: var(--dark-mode);
+  // background: linear-gradient(to bottom right, #242E61 0%, #1A203F 50%) bottom right / 50% 50% no-repeat, ta bugando criando umas linhas, está acima do meu conhecimento, boa sorte
+  //   linear-gradient(to bottom left, #242E61 0%, #1A203F 50%) bottom left / 50% 50% no-repeat,
+  //   linear-gradient(to top left, #242E61 0%, #1A203F 50%) top left / 50% 50% no-repeat,
+  //   linear-gradient(to top right, #242E61 0%, #1A203F 50%) top right / 50% 50% no-repeat;
+  background: var(--bg-primary);
   color: var(--brand-primary);
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.container {
+  padding: 0 10.25rem;
+}
+
+.external-container {
+  margin: 0 10.25rem;
 }
