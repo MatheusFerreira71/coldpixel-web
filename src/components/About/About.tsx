@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './About.scss';
+import Carousel from '../Carousel/Carousel';
 
 export default function About() {
   const [about, setAbout] = useState<boolean>(true);
@@ -56,13 +57,7 @@ export default function About() {
             minus possimus optio sit rem voluptatem dignissimos quos, sequi ut expedita dolores necessitatibus.
           </p>
         </div>
-        <div className="services-text">
-          <h1>Quais serviços oferecemos</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Ipsum omnis quo atque, maiores quidem deserunt nisi architecto,
-            minus possimus optio sit rem voluptatem dignissimos quos, sequi ut expedita dolores necessitatibus.
-          </p>
-        </div>
+        <Carousel />
       </div>
     </section>
   );

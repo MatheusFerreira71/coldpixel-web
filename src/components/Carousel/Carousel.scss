@@ -1,0 +1,80 @@
+.carousel {
+  max-width: 36rem;
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+
+    #left-arrow::after {
+      position: absolute;
+      content: 'Anterior';
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 1rem;
+      left: 50px;
+      color: var(--bw-grey);
+    }
+
+    #right-arrow::before {
+      position: absolute;
+      content: 'Próximo';
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 1rem;
+      right: 50px;
+      color: var(--bw-grey);
+    }
+
+    button {
+      position: relative;
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: var(--bw-grey);
+      border-radius: 100%;
+      border: none;
+      font-size: 1.3rem;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all ease-in-out 150ms;
+
+      &:hover {
+        cursor: pointer;
+        color: var(--helpers-cta);
+        background-color: var(--helpers-cta);
+
+        &::after {
+          color: var(--helpers-cta) !important;
+        }
+
+        &::before {
+          color: var(--helpers-cta) !important;
+        }
+      }
+
+      svg {
+        fill: var(--bw-white);
+      }
+    }
+  }
+
+  .cards-wrapper {
+    overflow-x: auto;
+
+    // Esconder a barra de rolagem
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .cards {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 4rem;
+    }
+  }
+}
