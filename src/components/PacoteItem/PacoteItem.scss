@@ -1,0 +1,41 @@
+.pacote {
+  border-radius: 1rem;
+  background: var(--bw-white-light);
+  box-shadow: 0px 4px 16px -3px rgba(0, 0, 0, 0.08);
+
+  header {
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    background: linear-gradient(135deg, #242E61 0%, #151C45 100%);
+    padding: 1.38rem 0rem;
+
+    h3 {
+      text-align: center;
+      margin: 0;
+      color: var(--bw-white);
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      border-bottom: 1px solid #EEE;
+      padding: 0.5rem 0;
+      text-align: center;
+      color: var(--brand-primary);
+    }
+
+    .price {
+      padding: 0;
+      border: none;
+
+      h3 {
+        margin: 1rem 0;
+        text-align: center;
+        color: var(--helpers-success);
+      }
+    }
+  }
+}

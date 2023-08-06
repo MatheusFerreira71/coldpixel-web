@@ -8,6 +8,7 @@ import { Computer } from './assets/Computer';
 import { Phone } from './assets/Phone';
 import { ShoppingCart } from './assets/ShoppingCart';
 import { Utilities } from './assets/Utilities';
+import Services from './components/Services/Services';
 
 function App() {
 
@@ -42,8 +43,9 @@ function App() {
           </section>
         </header>
         <About />
+        <Services />
       </main>
-      
+
       <Footer />
     </>
   )
