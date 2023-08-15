@@ -9,6 +9,7 @@ import { Phone } from './assets/Phone';
 import { ShoppingCart } from './assets/ShoppingCart';
 import { Utilities } from './assets/Utilities';
 import Services from './components/Services/Services';
+import Contact from './components/Contact/Contact';
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
         </header>
         <About />
         <Services />
+        <Contact />
       </main>
 
       <Footer />

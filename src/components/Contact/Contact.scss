@@ -1,0 +1,30 @@
+.contact {
+  flex-shrink: 0;
+  margin-bottom: 4rem;
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: var(--bw-white-light);
+  }
+
+  .contact-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+
+    .contact-text {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        width: 25.375rem;
+        color: var(--bw-white-dark);
+        margin-top: 0;
+        margin-bottom: 3rem;
+        text-align: left;
+      }
+    }
+  }
+}
